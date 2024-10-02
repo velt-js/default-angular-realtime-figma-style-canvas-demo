@@ -1,0 +1,12 @@
+<main [class.isFocused]="isFocused">
+	<app-sidebar *ngIf="!isFocused"></app-sidebar>
+
+	<div class="content">
+		<app-toolbar *ngIf="!isFocused"></app-toolbar>
+		<app-document></app-document>
+		<velt-huddle></velt-huddle>
+		<velt-cursor></velt-cursor>
+	</div>
+</main>
+
+<router-outlet />
